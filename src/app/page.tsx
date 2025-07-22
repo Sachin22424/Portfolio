@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Briefcase, Code, Mail, Linkedin, Github, ExternalLink, Menu, X, Download } from 'lucide-react';
+import { Mail, Linkedin, Github, ExternalLink, Menu, X, Download } from 'lucide-react';
+import Image from 'next/image';
 
 // Main Page Component
 const Page = () => {
@@ -59,7 +60,7 @@ const Page = () => {
         <section id="hero" className="min-h-screen flex items-center">
           <div className="text-center md:text-left w-full">
             <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-4">
-              Hi, I'm <span className="text-cyan-400">Sachin Maurya</span>
+              Hi, I&apos;m <span className="text-cyan-400">Sachin Maurya</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto md:mx-0">
               A passionate Full-Stack Developer and Machine Learning enthusiast, creating innovative solutions and building beautiful, responsive web applications.
@@ -80,7 +81,13 @@ const Page = () => {
             <h2 className="text-4xl font-bold text-center mb-12 text-white">About Me</h2>
             <div className="flex flex-col md:flex-row items-center gap-12">
                 <div className="md:w-1/3">
-                    <img src="https://placehold.co/400x400/1a202c/76e4f7?text=SM" alt="Sachin Maurya" className="rounded-full shadow-lg w-64 h-64 md:w-80 md:h-80 mx-auto border-4 border-cyan-400"/>
+                    <Image
+                      src="https://placehold.co/400x400/1a202c/76e4f7?text=SM"
+                      alt="Sachin Maurya"
+                      width={320}
+                      height={320}
+                      className="rounded-full shadow-lg w-64 h-64 md:w-80 md:h-80 mx-auto border-4 border-cyan-400"
+                    />
                 </div>
                 <div className="md:w-2/3 text-lg text-gray-300">
                     <p className="mb-4">
@@ -234,7 +241,7 @@ const Page = () => {
         <section id="contact" className="py-20 text-center">
           <h2 className="text-4xl font-bold text-white mb-4">Get In Touch</h2>
           <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-            I'm currently open to new opportunities and collaborations. Feel free to reach out if you have a project in mind or just want to connect!
+            I&apos;m currently open to new opportunities and collaborations. Feel free to reach out if you have a project in mind or just want to connect!
           </p>
           <a href="mailto:sachin22424@iiitd.ac.in" className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-4 px-8 rounded-full text-xl transition-transform transform hover:scale-105 inline-block">
             Say Hello
